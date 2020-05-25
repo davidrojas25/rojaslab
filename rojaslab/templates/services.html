@@ -1,0 +1,55 @@
+{% extends 'base.html' %}
+
+
+{% block content %}
+
+<div style="background-image:url({{ url_for('static', filename='img/matrix.jpg') }})" class="jumbotron jumbotron-fluid">
+    <div class="container">
+      <h1 class="display-1 text-light">Services</h1>
+      <p class="lead text-light">This is a modified jumbotron that occupies the entire horizontal space of its parent.</p>
+    </div>
+  </div>
+        <div class="container">
+        <div class="jumbotron jumbotron-fluid bg-dark">
+            <div class="container">
+                <div class="row">
+                  <div class="col-sm">
+                    <h1 class="text-light">Website Development</h1>
+                    <p class="lead text-light">Helping local businesses build modernize by build an online presense. In today's times even local busniesses need to have a website to attract the next generation of clients</p>
+                  </div>
+                  <div class="col-sm">
+                    <img class="img-fluid" src="/static/img/webdev.jpg">
+                  </div>
+                </div>
+              </div>
+            </div>
+        <div class="jumbotron jumbotron-fluid bg-primary">
+            <div class="container">
+                <div class="row">
+                  <div class="col-sm">
+                   <h1 class="text-light">Python Web Applications</h1>
+                   <p class="lead text-light">Its not enough to just provide info on your website. You need to be able to provide your busniess services online to attract new clients</p>
+                  </div>
+                  <div class="col-sm">
+                   <img class="img-fluid" src="/static/img/pythondev.jpg">
+                  </div>
+                </div>  
+            </div>
+        </div>
+        <div class="jumbotron jumbotron-fluid bg-dark">
+            <div class="container">
+                <div class="row">
+                  <div class="col-sm">
+                    <h1 class="text-light">Business Automation</h1>
+                    <p class="lead text-light">Helping local businesses build modernize by build an online presense. In today's times even local busniesses need to have a website to attract the next generation of clients</p>
+                  </div>
+                  <div class="col-sm">
+                    <img class="img-fluid" src="/static/img/automation.jpg">
+                  </div>
+                </div>
+              </div>
+            </div>
+        </div>
+
+    
+{% endblock content %}
