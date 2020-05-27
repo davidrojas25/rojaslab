@@ -1,4 +1,4 @@
-from rojaslab import app
+from rojaslab import app, mail
 from rojaslab.forms import ContactUsForm
 from flask import render_template, session, request, redirect, url_for, flash, abort
 from flask_login import login_user, login_required, logout_user
@@ -43,6 +43,10 @@ def contactus():
         return redirect(url_for('thankyou'))
         
     return render_template('contactus.html', form=form)
+
+@app.route('/thankyou')
+def thankyou():
+    return render_template('thankyou.html')
 
 
 
