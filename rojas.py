@@ -1,6 +1,6 @@
 from rojaslab import app, mail
 from rojaslab.forms import ContactUsForm
-from flask import render_template, session, request, redirect, url_for, flash, abort
+from flask import render_template, session, request, redirect, url_for, flash, abort, send_from_directory
 from flask_login import login_user, login_required, logout_user
 from flask_mail import Message
 from werkzeug.utils import secure_filename
@@ -47,6 +47,11 @@ def contactus():
 @app.route('/thankyou')
 def thankyou():
     return render_template('thankyou.html')
+
+@app.route('/robots.txt')
+@app.route('/sitemap.xml')
+def static_from_root():
+    return send_from_directory(app.static_folder, request.path[1:])
 
 
 
