@@ -1,5 +1,11 @@
 {% extends 'base.html' %}
 {% block title %}RojasLabs email form contact us{% endblock %}
+{% block meta %}
+  <meta property="og:title" content="Contact us page rojaslabs website design questions">
+  <meta property="og:description" content="Contact us website form to request more info on website design for small businesses">
+  <meta property="og:image" content="http://www.rojaslabs.com/static/img/rojashome2.jpg">
+  <meta property="og:url" content="http://rojaslabs.com/contactus.html">
+{% endblock %}
 
 {% block content %}
 <div style="background-image:url({{ url_for('static', filename='img/matrix.jpg') }})" class="jumbotron jumbotron-fluid">
